@@ -1,12 +1,12 @@
-import sys
-import cv2
-import numpy as np
+import sys # system important
+import cv2 # computer visualization
+import numpy as np # multi-dimensional array # linear algebra
 
 # Get arguments from command line.
-image_name = sys.argv[1]
+image_name = sys.argv[1] # take an argument from command line
 
 # Load Image and Convert into Gray
-image = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
+image = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE) # read image with gray scal image
 height, weight = image.shape
 
 # Make sobel for better customization.
